@@ -14,6 +14,6 @@ ENV email user@sample.com
 # Add server script and default config
 ADD run.sh /run.sh
 ADD panoramix/* /panoramix
-
+EXPOSE 8080
 # Start the web server foreground
 CMD [ "/bin/bash", "/run.sh" ]
